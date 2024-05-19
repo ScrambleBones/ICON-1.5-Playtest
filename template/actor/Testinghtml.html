@@ -1,0 +1,47 @@
+<link href="charecter-sheet.css" rel="stylesheet" />
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<div id="icon-sheet" x-data="{xp:7}">
+    <div id="icon-header">
+        <div id="icon-background">
+            <div id="icon-name">name</div>
+            <div id="icon-bond">bond</div>
+            <div id="icon-kin">kin</div>
+            <div id="icon-class">class</div>
+            <div id="icon-culture">culture</div>
+            <div id="icon-job">job</div>
+        </div>
+        <div id="icon-XP">
+            <div id="icon-XP-lable">XP</div>
+            <template x-for="i in 15">
+                <div :id="'icon-XP'+i"  class="icon-XP-box" :class="xp>=i?'xp-active':''"></div>
+            </template>
+        </div>
+        <div id="icon-level">level
+            <div id="icon-act1">
+                <div id="icon-act1-text">Act 1</div>
+                <div id="icon-act1-lvl1"></div>
+                <div id="icon-act1-lvl2"></div>
+                <div id="icon-act1-lvl3"></div>
+                <div id="icon-act1-lvl4"></div>
+            </div>
+            <div id="icon-act2">
+                <div id="icon-act2-text">Act 2</div>
+                <div id="icon-act2-lvl5"></div>
+                <div id="icon-act2-lvl6"></div>
+                <div id="icon-act2-lvl7"></div>
+                <div id="icon-act2-lvl8"></div>
+            </div>
+            <div id="icon-act3">
+                <div id="icon-act3-text">Act 3</div>
+                <div id="icon-act3-lvl9"></div>
+                <div id="icon-act3-lvl10"></div>
+                <div id="icon-act3-lvl11"></div>
+                <div id="icon-act3-lvl12"></div>
+            </div>
+        </div>
+    </div>
+    <div id="icon-navigation"></div>
+    <div id="icon-tabs"></div>
+    <div id="icon-footer"></div>
+</div>

@@ -1,0 +1,44 @@
+#icon-sheet * {
+    border: 2px dotted lightgray;
+}
+#icon-sheet {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 2vw;
+    border: 2px solid black;
+}
+#icon-header {
+    display: grid;
+    grid-template-columns: [first] 50% [second] auto [last] 25%;
+    grid-template-rows: [first] 10% [second] auto [last] 25%;
+    border: 2px solid black;
+}
+#icon-background * {
+    width: 49%;
+}
+#icon-background{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-start: first;
+    grid-column-end: second;
+    grid-row-start: first;
+    grid-row-end: second;
+}
+#icon-XP{
+    grid-column-start: first;
+    grid-column-end: first;
+    grid-row-start: last;
+    grid-row-end: last;
+    display: flex;
+    flex-direction: row;
+}
+.icon-xp-box{
+    height: 2em;
+    width: 2em;
+    border: 1px solid black;
+    transform: rotate(0.25turn);
+}
+.xp-active{
+    background-color: black;
+}
