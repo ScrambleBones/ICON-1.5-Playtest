@@ -1,0 +1,182 @@
+{
+  "id": "icon",
+  "name": "icon",
+  "title": "ICON System",
+  "description": "<p>The Foundry VTT game system for <a href=\"https://massif-press.itch.io/icon\">ICON</a> by <a href=\"https://massif-press.itch.io/\">Massif Press</a></p><p>\"ICON for FoundryVTT\" is not an official <i>ICON</i> product; it is a third party work, and is not affiliated with Massif Press.</p><p><i>ICON</i> is copyright Massif Press.</p>",
+  "version": "1.45.000",
+  "authors": [
+    {"name": "Sam", "url":"https://github.com/ScrambleBones", "discord":"scramblebones", "email":""},
+    {"name": "Sydney S", "url":"https://github.com/sashortty", "discord":"", "email":""},
+    {"name": "Lauren Wrubleski", "url":"https://github.com/lawruble13", "discord":"scramblebones", "email":""},
+    {"name": "Nolan Woods", "url":"https://thewoods.blog", "discord":"", "email":""}
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "esmodules": [],
+  "styles": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [],
+    "requires": [
+      {
+        "id": "statuscounter",
+        "type": "module",
+        "manifest": "https://gitlab.com/woodentavern/status-icon-counters/-/raw/master/src/module.json",
+        "compatibility": {
+          "verified": "2.1.0"
+        }
+      },
+      {
+        "id": "icon-status-icons",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/Eranziel/icon-status-icons/main/module.json",
+        "compatibility": {
+          "verified": "1.1.0"
+        }
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
+        "compatibility": {
+          "verified": "1.0.13"
+        }
+      },
+      {
+        "id": "lancer-initiative",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/BoltsJ/lancer-initiative/default/public/module.json",
+        "compatibility": {
+          "verified": "26-dev"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "label": "Foes",
+      "type": "Actor",
+      "name": "foes",
+      "path": "packs/foes",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Jobs",
+      "type": "Item",
+      "name": "jobs",
+      "path": "packs/jobs",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Abilities",
+      "type": "Item",
+      "name": "abilities",
+      "path": "packs/abilities",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Jobs Traits",
+      "type": "Item",
+      "name": "job-traits",
+      "path": "packs/job-traits",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Relics",
+      "type": "Item",
+      "name": "relics",
+      "path": "packs/relics",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Bond Powers",
+      "type": "Item",
+      "name": "bond-powers",
+      "path": "packs/bond-powers",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "seer-cards",
+      "label": "Seer Cards",
+      "type": "Cards",
+      "path": "packs/seer-cards",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "type": "JournalEntry",
+      "path": "packs/rules",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "glossary",
+      "label": "Glossary",
+      "type": "JournalEntry",
+      "path": "packs/glossary",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "bonds",
+      "label": "Bonds",
+      "type": "Item",
+      "path": "packs/bonds",
+      "system": "icon",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Macros",
+      "type": "Macro",
+      "name": "macros",
+      "path": "packs/macros",
+      "system": "icon",
+      "flags": {}
+    },
+    {
+      "label": "Summons",
+      "type": "Actor",
+      "name": "summons",
+      "path": "packs/summons",
+      "system": "icon",
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/ScrambleBones/ICON-1.5-Playtest",
+  "readme": "https://github.com/ScrambleBones/ICON-1.5-Playtest/blob/master/README.md",
+  "bugs": "https://github.com/ScrambleBones/ICON-1.5-Playtest/issues",
+  "changelog": "https://github.com/ScrambleBones/ICON-1.5-Playtest/releases/latest/",
+  "manifest": "https://github.com/ScrambleBones/ICON-1.5-Playtest/releases/latest/download/system.json",
+  "download": "https://github.com/ScrambleBones/ICON-1.5-Playtest/releases/latest/download/icon_1.45.000.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}
