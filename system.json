@@ -14,7 +14,7 @@
     "minimum": "11",
     "verified": "11"
   },
-  "esmodules": [],
+  "esmodules": ["module/index.mjs"],
   "styles": [],
   "languages": [
     {
