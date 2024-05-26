@@ -8,7 +8,7 @@
     <script type="module">
         import {range} from "./module/helpers/handlebars.mjs";
         Handlebars.registerHelper('range', range);
-        async function loadHandlebars() {
+        window.loadHandlebars = async function() {
             let templateInput = document.getElementById("template");
             let dataInput = document.getElementById("data");
 
