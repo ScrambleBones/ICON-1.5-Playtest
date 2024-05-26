@@ -1,21 +1,37 @@
 <link href="template/actor/character-sheet.css" rel="stylesheet" />
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-<div id="icon-sheet" x-data="{xp:7}">
+<div id="icon-sheet">
     <div id="icon-header">
         <div id="icon-background">
-            <div id="icon-name">name</div>
-            <div id="icon-bond">bond</div>
-            <div id="icon-kin">kin</div>
-            <div id="icon-class">class</div>
-            <div id="icon-culture">culture</div>
-            <div id="icon-job">job</div>
+            <div id="icon-name">Name</div>
+            <div id="icon-bond">Bond</div>
+            <div id="icon-kin">Kin</div>
+            <div id="icon-class">Class</div>
+            <div id="icon-culture">Culture</div>
+            <div id="icon-job">Job</div>
         </div>
         <div id="icon-XP">
             <div id="icon-XP-lable">XP</div>
-            <template x-for="i in 15">
-                <div :id="'icon-XP'+i"  class="icon-XP-box" :class="xp>=i?'xp-active':''"></div>
-            </template>
+            {{#each (range 15)}}
+                <div id="{{'icon-XP'+ this}}" class="icon-XP-box {{data.xp>=this?'XP-active':''}}">
+                {{#if (this!=15 && this!=7)}}
+                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.66 285.66">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #000;
+                        stroke-miterlimit: 10;
+                        stroke-width: 12px;
+                    }
+                    </style>
+                </defs>
+                <path class="cls-1" d="m142.83,23.08h0c15.73,58.4,61.35,104.02,119.75,119.75h0s0,0,0,0c-58.4,15.73-104.02,61.35-119.75,119.75h0s0,0,0,0c-15.73-58.4-61.35-104.02-119.75-119.75h0s0,0,0,0c58.4-15.73,104.02-61.35,119.75-119.75h0Z"/>
+                </svg>
+                {{/if}}
+                </div>
+            {{/each}}
         </div>
         <div id="icon-level">level
             <div id="icon-act1">
@@ -41,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div id="icon-navigation"></div>
-    <div id="icon-tabs"></div>
-    <div id="icon-footer"></div>
+    <div id="icon-navigation">navigation</div>
+    <div id="icon-tabs">tabs</div>
+    <div id="icon-footer">footer</div>
 </div>

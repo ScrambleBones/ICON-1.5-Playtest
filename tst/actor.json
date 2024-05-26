@@ -1,7 +1,9 @@
 {
   "actor": {},
   "cssClass": "editable",
-  "data": {},
+  "data": {
+    "xp":3
+  },
   "document": {},
   "editable": true,
   "items": [],

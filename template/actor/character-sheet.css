@@ -14,31 +14,65 @@
     border: 2px solid black;
 }
 #icon-background * {
-    width: 49%;
+    width: 48%;
+    border: 2px solid black;
+    padding: .25% .25% .25% .25%;
 }
 #icon-background{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    grid-gap: 3px;
+}
+#icon-level{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    display: grid;
+    grid-template-columns: [first] auto [second] auto [third] auto [fourth] auto [last] auto;
+    grid-template-rows: [first] auto [second] auto [third] auto [last] auto;
+}
+#icon-act1{
     grid-column-start: first;
-    grid-column-end: second;
-    grid-row-start: first;
+    grid-column-end: last;
+    grid-row-start: second;
     grid-row-end: second;
 }
-#icon-XP{
+#icon-act2{
     grid-column-start: first;
-    grid-column-end: first;
+    grid-column-end: last;
+    grid-row-start: third;
+    grid-row-end: third;
+}
+#icon-act3{
+    grid-column-start: first;
+    grid-column-end: last;
     grid-row-start: last;
     grid-row-end: last;
+}
+#icon-XP{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
     display: flex;
     flex-direction: row;
 }
-.icon-xp-box{
-    height: 2em;
-    width: 2em;
-    border: 1px solid black;
-    transform: rotate(0.25turn);
+#icon-XP-label{
+    height: 100%;
+    width: 10%;
+    border: 2px solid black;
 }
-.xp-active{
+.icon-XP-box{
+    height: 100%;
+    width: 10%;
+    border: 2px solid black;
+}
+.XP-active{
     background-color: black;
 }
