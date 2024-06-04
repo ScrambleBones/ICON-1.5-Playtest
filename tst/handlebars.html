@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link href="C:/Users/sasho/ICON-1.5-Playtest/template/actor/character-sheet.css"rel="stylesheet" />
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <title>Handlebars test</title>
     <base href="../">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="template/actor/character-sheet.css" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="template/actor/character-sheet.js"></script>
     <script type="module">
-        import {range} from "./module/helpers/handlebars.mjs";
-        Handlebars.registerHelper('range', range);
+        import "./module/helpers/handlebars.js";
         window.loadHandlebars = async function() {
             let templateInput = document.getElementById("template");
             let dataInput = document.getElementById("data");
@@ -18,7 +18,7 @@
             let template = Handlebars.compile(await templateInput.files.item(0).text());
             document.getElementById("templateBody").innerHTML = template(JSON.parse(await dataInput.files.item(0).text()));
         }
-        window.onload = loadHandlebars;
+        window.addEventListener('load', loadHandlebars);
     </script>
     <style>
         body > header {

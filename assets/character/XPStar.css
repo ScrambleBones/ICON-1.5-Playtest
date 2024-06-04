@@ -1,0 +1,10 @@
+.xpstar {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 12px;
+}
+
+.selected .xpstar {
+    fill: gray;
+}

@@ -1,5 +1,6 @@
-import { range } from './range';
+
+import './helpers/handlebars.js'
 
 Hooks.once('init', function () {
-    Handlebars.registerHelper('range', range);
+
 });
